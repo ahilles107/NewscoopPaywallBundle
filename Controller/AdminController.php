@@ -118,7 +118,7 @@ class AdminController extends Controller
                     ->findOneBy(array(
                         'value' => $duration->getValue(),
                         'subscription' => $id,
-                    ));
+                ));
 
                 if (!$durationEntity) {
                     $subscription = $em->getRepository('Newscoop\PaywallBundle\Entity\Subscription')
@@ -180,11 +180,13 @@ class AdminController extends Controller
 
                 return new JsonResponse(array(
                     'status' => true,
+                    'message' => 'success',
                 ));
             }
 
             return new JsonResponse(array(
                 'status' => false,
+                'message' => 'error',
             ));
         } catch (\Exception $e) {
             return new JsonResponse(array(

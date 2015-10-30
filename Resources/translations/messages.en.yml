@@ -21,6 +21,10 @@ paywall:
       editcurrency: "Edit currency"
       removeitem: "Are you sure you want to delete this item?"
       confirmation: "Confirmation"
+      paid: "Paid article?"
+      yes: "Yes"
+      no: "No"
+      requiredfields: "required fields"
       currency:
         create: "You can add any currency you wish to the system. Exchange rates must be positive numbers and will be rounded to five decimal places by default. Both the comma and period can be used as decimal separators."
     alert:
@@ -178,13 +182,16 @@ paywall:
           previous: "Previous"
           norecords: "No records found."
     error:
+      suberror: "Subscription could not be saved."
       fatal: "Unexpected error occured!"
+      perioderror: "Could not remove this period!"
       settingserror: "Error occured. Can not save settings."
       notadded: "Could not render added entry."
       exists: "Resource named %resource% already exists."
       notexists: "Item with such identifier does not exist."
     success:
       settingssaved: "Settings successfully saved."
+      subsaved: "Subscription has been saved successfully."
       added: "Successfully added."
       removed: Successfully removed.
       saved: "Successfully saved."
